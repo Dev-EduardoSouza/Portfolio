@@ -33,4 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
             rootMargin: '0px 0px -40%',
         });
     };
+
+    
 });

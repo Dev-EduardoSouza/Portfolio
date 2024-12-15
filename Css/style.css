@@ -132,7 +132,7 @@ tamanhos de font */
   #home {
     padding-top: 10rem !important; 
     background: #ececec;
-    
+
   }
 
   #sobre {
@@ -295,6 +295,19 @@ tamanhos de font */
   height: 100%;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+/* Alterando a cor do ícone de seta para um tom de azul escuro (#003366) usando filtro */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(28%) sepia(40%) saturate(500%) hue-rotate(190deg) brightness(90%) contrast(85%);
+}
+
+
+
+
+.card-project:hover{
+  transform: scale(1.02); /* Aumenta o ícone no hover */
 }
 
 .img-border{
@@ -344,6 +357,43 @@ tamanhos de font */
   background-color: transparent; /* Deixa o conteúdo transparente */
 }
 
+input, textarea {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 2px solid #ccc; /* Cor neutra para a borda */
+  border-radius: 8px; /* Bordas arredondadas */
+  background-color: #f9f9f9; /* Cor de fundo leve */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Transições suaves */
+}
+
+
+
+/* Estilo de foco (quando o input está ativo) */
+input:focus, textarea:focus {
+  border-color: #613dc1; /* Cor de borda verde */
+  background-color: #fff; /* Fundo branco no foco */
+  box-shadow: 0 0 8px rgba(111, 76, 175, 0.4); /* Sombra suave verde */
+  outline: none; /* Remove o outline padrão */
+}
+
+/* Estilo para textos placeholders */
+input::placeholder, textarea::placeholder {
+  color: #888; /* Cor de placeholder neutra */
+  font-style: italic; /* Coloca o placeholder em itálico */
+}
+
+.footer{
+    background-color: #222222;
+    color: #ececec;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: static ;
+    bottom: 0;
+}
+
 @media (min-width: 768px) {
     .intro{
       font-size: 1.4rem;
@@ -357,6 +407,9 @@ tamanhos de font */
 @media (min-width: 992px) {
     .intro {
       font-size: 1.8rem;
+    }
+    #home {
+      height: 100%;
     }
 }
 
