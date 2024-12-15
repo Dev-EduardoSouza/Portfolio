@@ -1,0 +1,366 @@
+
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* colors */
+.color1{
+    color: #532b88;
+}
+.snow{
+  background: #f8f8f8;
+}
+.white{
+  color:#ffffff !important;
+}
+.blue{
+  color: #007bff;
+}
+.black{
+  color: #000;
+}
+/* 
+tamanhos de font */
+
+.font-smal{
+  font-size: 30px;
+}
+
+.font-medium{
+  font-size: 40px;
+}
+
+.font-large{
+  font-size: 60px;
+}
+
+
+
+
+
+
+  /* Estilização para toda a pagina */
+  html, body {
+    margin: 0; 
+    padding: 0; 
+    width: 100%; 
+    height: 100%; 
+    overflow-x: hidden; 
+  }
+
+
+  .box-shadow-none{
+    box-shadow: none;
+  }
+  .table-responsive {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+  .accordion-item{
+    border-radius: 5px;
+  }
+
+  .accordion-button:focus{
+    box-shadow:none;
+  }
+  ul {
+    list-style-type: none;
+  }
+  .Social li::before {
+    content: "—";
+    color: black;
+    font-weight:bold ;
+  }
+
+  .actions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    flex-direction: column;
+  }
+
+  .icons{
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .icons:hover{
+    transform: scale(1.2);
+  }
+
+
+  .bio-container{
+    background: linear-gradient( to right, #757bc8, #8e94f2);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin: 10px 0 30px 0;
+  }
+  .acd-container{
+    background: linear-gradient( to left, #AFB1FF, #9095D3);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 10px 0 30px 0;
+  }
+  
+  .ml-custom{
+    margin-left: 7%;
+    
+  }
+
+
+  .cursor-default {
+    cursor: default;
+  }
+
+  .img{
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+    width: 50%;
+  }
+
+  #home {
+    padding-top: 10rem !important; 
+    background: #ececec;
+    
+  }
+
+  #sobre {
+    background: linear-gradient( to right, #EBD9FC, #C0A7EB);
+  }
+
+  .intro{
+    font-size: 1.2rem;
+  }
+
+  #skills {
+    background: linear-gradient( to right, #613dc1, #858ae3, #613dc1);
+  }
+
+  /* Container principal */
+.legenda {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+/* Cada item da legenda */
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Círculo colorido */
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%; /* Torna o elemento circular */
+  display: inline-block;
+  border: 1px solid #ccc;
+}
+
+/* Cores específicas */
+.white-circle {
+  background-color: #fff; /* Branco */
+  border: 1px solid #000;
+}
+
+.blue-circle {
+  background-color: #007bff; /* Azul */
+}
+
+.black-circle{
+  background-color: #000; /* Preto */
+}
+
+
+  .botoes-skills {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    border-radius: 30px;
+    box-shadow: 0 0 10px 0 rgba(19, 100, 19, 0.4);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.botoes-skills button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    padding: 12px 20px;
+    width: 50%;
+    font-weight: bold;
+    z-index: 1;
+    transition: color 0.3s ease;
+}
+
+.botoes-skills button:hover {
+    color: #2e518a;
+}
+
+.btn-color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, #461177, #5829a7);
+    border-radius: 30px;
+    transition: left 0.3s ease;
+}
+
+.habilidade-social {
+  cursor: default;
+  width: 260px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 10px 0;
+  padding: 10px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.habilidade-social:hover {
+  background-color: #f4f4ff; /* Um leve roxo */
+  transform: scale(1.05); /* Aumenta ligeiramente no hover */
+}
+
+.icone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ececec; /* Fundo do ícone */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.habilidade-social:hover .icone {
+  transform: scale(1.2); /* Aumenta o ícone no hover */
+  background-color: #532b88; /* Fundo do ícone muda de cor */
+}
+
+.icone span {
+  font-size: 24px;
+  color: #333; /* Cor inicial do ícone */
+  transition: color 0.3s ease;
+}
+
+.habilidade-social:hover .icone span {
+  color: #fff; /* Cor do ícone no hover */
+}
+
+.descricao {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+  
+.skill{
+  cursor: default;
+  background-color: #ececec;
+  border-radius: 1rem;
+  height: 75px;
+  transition: transform 0.3s ease;
+}
+
+.skill:hover{
+  transform: scale(1.1); /* Aumenta o ícone no hover */
+}
+
+.projetcs-container{
+  background: #dec9e9;
+}
+
+.card-project{
+  height: 100%;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.img-border{
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.links{
+  padding: 20px;
+}
+.more{
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+  width: 200px;
+  background-color: #8e94f2;
+  margin-right: 10px;
+  
+}
+
+.more:hover{
+  background-color: #613dc1;
+  color: #ececec;
+}
+
+
+
+.card-project .accordion-item {
+  background-color: transparent; /* Deixa o fundo do item transparente */
+  border: none; /* Remove a borda se necessário */
+}
+
+.card-project .accordion-header {
+  background-color: transparent; /* Fundo transparente do cabeçalho */
+}
+
+.card-project .accordion-button {
+  background-color: transparent; /* Fundo do botão transparente */
+  color: inherit; /* Mantém a cor original ou use a que preferir */
+  border: none; /* Remove a borda */
+}
+
+.card-project .accordion-button:not(.collapsed) {
+  background-color: rgba(0, 0, 0, 0.2); /* Fundo semi-transparente quando ativo */
+  color: inherit; /* Ajuste a cor conforme o tema */
+}
+
+.card-project .arccordion-body {
+  background-color: transparent; /* Deixa o conteúdo transparente */
+}
+
+@media (min-width: 768px) {
+    .intro{
+      font-size: 1.4rem;
+    }
+
+    .img{
+      width: 75%;
+    }
+}
+
+@media (min-width: 992px) {
+    .intro {
+      font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 900px) {
+
+  
+}

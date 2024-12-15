@@ -1,0 +1,108 @@
+  .nav-bar-container{
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+    background: linear-gradient( to bottom, #AFB1FF, #9095D3);
+    margin-bottom: 30px;
+    z-index: 9999;
+  }
+
+  .icons-nav {
+    width: 25px;
+    height: 25px;
+    color: white;
+  }
+
+  .active {
+    color: #2F49D1 !important; /* Cor de destaque */
+    font-weight: bold; /* Aumenta a ênfase no item ativo */
+    transition: color 0.3s ease
+}
+
+  .nav-item a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    line-height: 10px;
+    margin: 0;
+  }
+  .nav-item a:hover {
+    color: #532b88;
+  }
+
+  .nav-item a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #532b88;
+    transition: width 0.3s;
+  }
+
+
+  .nav-item a:hover::after{
+    width: 100%;
+  }
+
+  .nav-item a.active::after {
+    width: 100%;
+    background-color: #2F49D1;
+  }
+  .nav-item a:active{
+    color: #2F49D1;
+  }
+
+
+  .logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .responsive-nav {
+      padding: 0% 1%; /* Padding em porcentagem */
+      height: 60px;
+  }
+  
+  .navbar-collapse {
+    align-items: center;
+    justify-content: center;
+}
+
+
+.responsive-logo {
+  width: 70px; /* Largura padrão */
+  height: 70px;
+  margin-bottom: 3px ;
+}
+
+
+  @media (min-width: 768px) {
+      .responsive-nav {
+          padding: 2%; /* Padding reduzido em telas médias e maiores */
+          height: 80px;
+      }
+  }
+
+  @media (min-width: 992px) {
+      .responsive-nav {
+          padding: 0% 5%; /* Padding ainda menor em telas grandes */
+          height: 90px;
+      }
+      .responsive-logo {
+        width: 100px; /* Largura em telas grandes */
+        height: 100px;
+        margin-bottom: 3px;
+    }
+  }
+
+    @media (min-width: 500px) {
+        .responsive-logo {
+            width: 85px; /* Largura em telas médias */
+            height: 85px;
+            margin-bottom: 5px;
+            
+        }
+    }
