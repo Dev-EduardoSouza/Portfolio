@@ -805,26 +805,26 @@
                 <!-- Name input-->
                 <div class=" mb-3">
                   <label for="name">Seu nome:</label>
-                  <input class="" required id="name" name="Nome" type="text" placeholder="Digite seu nome..." data-sb-validations="required" />
+                  <input class="" required id="name"  minlength="5"  maxlength="100" name="Nome" type="text" placeholder="Digite seu nome..." data-sb-validations="required" />
                   <div class="invalid-feedback" data-sb-feedback="name:required">Seu nome é obrigatório.</div>
                 </div>
                 <!-- Email address input-->
                 <div class=" mb-3">
                   <label for="email">Email:</label>
-                  <input class="" required name="Email" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                  <input class="" required name="Email" id="email" type="email" maxlength="100"  minlength="3" placeholder="name@example.com" data-sb-validations="required,email" />
                   <div class="invalid-feedback" data-sb-feedback="email:required">Seu email é obrigatório</div>
                   <div class="invalid-feedback" data-sb-feedback="email:email">Este email não é válido.</div>
                 </div>
                 <!-- Phone number input-->
                 <div class=" mb-3">
                   <label for="phone">Número de Telefone:</label>
-                  <input class="" required id="phone" type="tel" name="Telefone" placeholder="(00) 0 0000-0000" data-sb-validations="required" />
+                  <input class="" required id="phone" type="tel" name="Telefone" maxlength="25"  minlength="8" placeholder="(00) 0 0000-0000" data-sb-validations="required" />
                   <div class="invalid-feedback" data-sb-feedback="phone:required">Um número de telefone é necessário.</div>
                 </div>
                 <!-- Message input-->
                 <div class=" mb-3">
                   <label for="message">Mensagem:</label>
-                    <textarea class="" required id="message" type="text" placeholder="Digite sua mensagem aqui" style="height: 10rem" data-sb-validations="required" name="Mensagem"></textarea>
+                    <textarea class="" maxlength="1000" required id="message" type="text" placeholder="Digite sua mensagem aqui" style="height: 10rem" data-sb-validations="required" name="Mensagem"></textarea>
                     <div class="invalid-feedback" data-sb-feedback="message:required">É necessário digitar uma mensagem.</div>
                 </div>
 
@@ -837,7 +837,7 @@
         
                 <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Erroo ao enviar mensagem!</div></div>
                 <!-- Submit Button-->
-                <div class="d-grid"><button class="btn btn-xl more w-100" id="submitButton" type="submit">Enviar Mensagem</button></div>
+                <div class="d-grid mb-5"><button class="btn btn-xl more w-100" id="submitButton" type="submit">Enviar Mensagem</button></div>
             </form>
     </section>
 
