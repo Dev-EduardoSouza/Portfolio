@@ -88,8 +88,6 @@ tamanhos de font */
   }
 
   .icons{
-    width: 35px;
-    height: 35px;
     transition: transform 0.3s ease;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
   }
@@ -141,6 +139,10 @@ tamanhos de font */
 
   .intro{
     font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   #skills {
@@ -331,7 +333,9 @@ tamanhos de font */
   color: #ececec;
 }
 
-
+img{
+  image-rendering: optimizeQuality; /* Garante que o SVG mantenha qualidade ao ser ampliado */
+}
 
 .card-project .accordion-item {
   background-color: transparent; /* Deixa o fundo do item transparente */
@@ -393,6 +397,23 @@ input::placeholder, textarea::placeholder {
     position: static ;
     bottom: 0;
 }
+
+.pulsar {
+  animation: pulsar 2s ease-in-out infinite;
+}
+
+@keyframes pulsar {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 
 @media (min-width: 768px) {
     .intro{
