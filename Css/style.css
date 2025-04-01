@@ -11,7 +11,7 @@
 
 /* colors */
 .color1{
-    color: #532b88;
+    color: #00D1FF;
 }
 .snow{
   background: #f8f8f8;
@@ -90,6 +90,7 @@ tamanhos de font */
   .icons{
     transition: transform 0.3s ease;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    color: #C4A343;
   }
 
   .icons:hover{
@@ -98,14 +99,14 @@ tamanhos de font */
 
 
   .bio-container{
-    background: linear-gradient( to right, #757bc8, #8e94f2);
+    background: linear-gradient( to right, #1B365D, #4d6280);
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     margin: 10px 0 30px 0;
   }
   .acd-container{
-    background: linear-gradient( to left, #AFB1FF, #9095D3);
+    background: linear-gradient( to left, #1B365D, #4d6280);
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -129,12 +130,12 @@ tamanhos de font */
 
   #home {
     padding-top: 10rem !important; 
-    background: #ececec;
+    background: linear-gradient( to right, #1C3A5C, #2b598c);
 
   }
 
   #sobre {
-    background: linear-gradient( to right, #EBD9FC, #C0A7EB);
+    background: linear-gradient( to right, #F8F9FA, #b3d0ee);
   }
 
   .intro{
@@ -146,7 +147,7 @@ tamanhos de font */
   }
 
   #skills {
-    background: linear-gradient( to right, #613dc1, #858ae3, #613dc1);
+    background: linear-gradient( to right, #0F172A, #324c88, #0F172A);
   }
 
   /* Container principal */
@@ -194,7 +195,7 @@ tamanhos de font */
     justify-content: center;
     width: 90%;
     border-radius: 30px;
-    box-shadow: 0 0 10px 0 rgba(90, 25, 194, 0.4);
+    box-shadow: 0 0 10px 0 rgba(25, 42, 194, 0.4);
     margin-bottom: 20px;
     position: relative;
 }
@@ -220,7 +221,7 @@ tamanhos de font */
     left: 0;
     width: 50%;
     height: 100%;
-    background: linear-gradient(to right, #461177, #5829a7);
+    background: linear-gradient(to right, #00A8CC, #057e99);
     border-radius: 30px;
     transition: left 0.3s ease;
 }
@@ -257,7 +258,7 @@ tamanhos de font */
 
 .habilidade-social:hover .icone {
   transform: scale(1.2); /* Aumenta o ícone no hover */
-  background-color: #532b88; /* Fundo do ícone muda de cor */
+  background-color: #1C3A5C; /* Fundo do ícone muda de cor */
 }
 
 .icone span {
@@ -290,7 +291,7 @@ tamanhos de font */
 }
 
 .projetcs-container{
-  background: #dec9e9;
+  background: #F8F9FA;
 }
 
 .card-project{
@@ -323,13 +324,13 @@ tamanhos de font */
 .more{
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
   width: 200px;
-  background-color: #8e94f2;
+  background-color: #1C3A5C ;
   margin-right: 10px;
-  
+  color: #ececec;
 }
 
 .more:hover{
-  background-color: #613dc1;
+  background-color: #2762a7 ;
   color: #ececec;
 }
 

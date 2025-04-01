@@ -2,7 +2,7 @@
     justify-content: center;
     align-items: center;
     max-width: 100vw;
-    background: linear-gradient( to bottom, #AFB1FF, #9095D3);
+    background: linear-gradient( to bottom, #0F172A, #20325A);
     margin-bottom: 30px;
     z-index: 9999;
   }
@@ -27,7 +27,7 @@
     margin: 0;
   }
   .nav-item a:hover {
-    color: #532b88;
+    color: #C4A343;
   }
 
   .nav-item a::after {
@@ -37,7 +37,7 @@
     height: 2px;
     bottom: -2px;
     left: 0;
-    background-color: #532b88;
+    background-color: #C4A343;
     transition: width 0.3s;
   }
 
