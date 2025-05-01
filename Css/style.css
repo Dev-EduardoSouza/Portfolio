@@ -150,6 +150,14 @@ tamanhos de font */
     background: linear-gradient( to right, #0F172A, #324c88, #0F172A);
   }
 
+  #contato {
+    background: #ececec;
+  }
+
+  .textareaCustom {
+    height: 10rem;
+  }
+
   /* Container principal */
 .legenda {
   display: flex;
